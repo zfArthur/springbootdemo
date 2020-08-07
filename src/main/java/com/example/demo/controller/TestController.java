@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import com.example.demo.mapper.CharTestMapper;
+import com.example.demo.mapper.UserMapper;
 import com.example.demo.model.CharTestEntity;
 import com.example.demo.dto.TestReqDto;
 import com.google.gson.Gson;
@@ -18,12 +18,12 @@ import java.util.List;
 public class TestController {
 
     @Autowired
-    private CharTestMapper charTestMapper;
+    private UserMapper userMapper;
 
     @RequestMapping("/ceshi")
     public List<CharTestEntity> equals(@RequestBody TestReqDto testReqDto) {
         log.info(new Gson().toJson(testReqDto));
-        List<CharTestEntity> list=  charTestMapper.getAll();
+        List<CharTestEntity> list=  userMapper.getAll();
         log.info(new Gson().toJson(list));
         return list;
     }

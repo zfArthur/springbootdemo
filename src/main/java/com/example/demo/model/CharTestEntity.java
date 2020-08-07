@@ -26,7 +26,8 @@ public class CharTestEntity implements Serializable {
      */
     //@JsonProperty("id")
     private Integer id;
-
-    private Integer char_col;
+    private String userName;
+    private String passWord;
+    private String nickName;
 
 }

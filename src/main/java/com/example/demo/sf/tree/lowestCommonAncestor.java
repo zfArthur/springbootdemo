@@ -53,7 +53,7 @@ import java.util.Set;
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
+class lowestCommonAncestor {
 
     Map<Integer,TreeNode> parent = new HashMap<Integer,TreeNode>();
     Set<Integer> visited = new HashSet<Integer>();

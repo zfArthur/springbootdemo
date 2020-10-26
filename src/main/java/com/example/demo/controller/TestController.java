@@ -17,14 +17,14 @@ import java.util.List;
 @Slf4j
 public class TestController {
 
-    @Autowired
-    private CharTestMapper charTestMapper;
-
-    @RequestMapping("/ceshi")
-    public List<CharTestEntity> equals(@RequestBody TestReqDto testReqDto) {
-        log.info(new Gson().toJson(testReqDto));
-        List<CharTestEntity> list=  charTestMapper.getAll();
-        log.info(new Gson().toJson(list));
-        return list;
-    }
+//    @Autowired
+//    private CharTestMapper charTestMapper;
+//
+//    @RequestMapping("/ceshi")
+//    public List<CharTestEntity> equals(@RequestBody TestReqDto testReqDto) {
+////        log.info(new Gson().toJson(testReqDto));
+//        List<CharTestEntity> list=  charTestMapper.getAll();
+//        log.info(new Gson().toJson(list));
+//        return list;
+//    }
 }
